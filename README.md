@@ -1,8 +1,11 @@
-# TablviewDynamicHeightDemo
-
-背景：
+动态计算UITableviewCell的高度方法
+---
 iOS8之后，NSString的sizeWithFont等系列计算文字高度的方法已失效，使用最新的Xcode6，按照原来的方法计算会出现警告。
 抽空整理下，常用的列表高度自适应方法，做了一个简单Demo。
+
+方法一：通过UILabel的sizeToFit进行计算高度
+方法二：通过UIView的systemLayoutSizeFittingSize获取UITableviewCell的ContentView的高度，注意此方法需要设置UILabel的preferredMaxLayoutWidth值，用于换行计算时使用。
+
 
 
 
